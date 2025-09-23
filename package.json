@@ -1,0 +1,30 @@
+{
+  "name": "mini-crm-mern",
+  "version": "1.0.0",
+  "description": "Mini CRM Application built with MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "crm",
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Dev Innovations Labs",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
